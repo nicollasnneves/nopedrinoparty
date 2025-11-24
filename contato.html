@@ -7,6 +7,7 @@
   <title>Introdução Bootstrap</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="shortcut icon" href="img/school.png" type="image/x-icon">
   <link rel="stylesheet" href="css/footer.css">
 </head>
 
@@ -19,68 +20,102 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="destaques.html">Destaques</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="contato.html">Contato</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="row mb-3">
-            <div class="col-md-12 col-sm-12 mb-2">
-                <div class="alert alert-primary" role="alert" id="teste1">
-                    <p>Um texto aqui.</p>
-                </div>
-                <button id="esconder" class="btn btn-danger">Esconder
-                    parágrafo</button>
-                <button id="mostrar" class="btn btn-primary">Mostrar
-                    parágrafo</button>
-            </div>
-        </div>
+  <div class="container mt-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Página Inicial</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contato</li>
+      </ol>
+    </nav>
 
-        <div class="row mb-3">
-            <div class="col-md-12 col-sm-12 mb-2">
-                <div class="alert alert-warning" role="alert" id="teste2">
-                    <p>Um texto aqui.</p>
-                </div>
-                <button id="alterarCSS" class="btn btn-warning">Alterar
-                    CSS</button>
-            </div>
-        </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <form action="" method="post">
+          <div class="form-group">
+            <label for="var_nome">Nome</label>
+            <input type="text" class="form-control" id="var_nome" placeholder="Seu nome" maxlength="100" minlength="10">
+          </div>
+          <div class="form-group">
+            <label for="var_email">E-mail</label>
+            <input type="email" class="form-control" id="var_email" placeholder="Seu email">
+          </div>
+          <div class="form-group">
+            <label for="var_idade">Idade</label>
+            <input type="number" class="form-control" id="var_idade" placeholder="Sua idade" max="120" min="15">
+          </div>
+          <div class="form-group">
+            <label for="var_data">Data de Nascimento</label>
+            <input type="date" class="form-control" id="var_data" min="1970-01-01">
+          </div>
+          <div class="form-group">
+            <label for="var_uf">Estado</label>
+            <select class="form-control" id="var_uf">
+              <option disabled selected>Escolha seu estado</option>
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="BA">Bahia</option>
+            </select>
+          </div>
 
-        <div class="row mb-3">
-            <div class="col-md-12 col-sm-12 mb-2">
-                <div class="alert alert-success" role="alert" id="teste3">
-                    <p>Um texto aqui.</p>
-                </div>
-                <button id="alterarClass" class="btn btn-success">Alterar
-                    Class</button>
-            </div>
-        </div>
+          <h6>Estado Civil</h6>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="estado_civil" id="solteiro" value="solteiro" checked>
+            <label class="form-check-label" for="solteiro">
+              Solteiro
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="estado_civil" id="casado" value="casado">
+            <label class="form-check-label" for="casado">
+              Casado
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="estado_civil" id="viuvo" value="viúvo">
+            <label class="form-check-label" for="viuvo">
+              Viúvo
+            </label>
+          </div>
 
-        <div class="row mb-3">
-            <div class="col-md-12 col-sm-12 mb-2">
-                <p>
-                    <a href="https://www.nike.com/" id="link" title="Nike" target="_blank">Nike</a>
-                </p>
-                <button id="alternar1" class="btn btn-danger">Alternar
-                    Nike</button>
-                <button id="alternar2" class="btn btn-primary">Alternar
-                    Barcelona</button>
+          <div class="form-group mt-3">
+            <label for="var_msg">Mensagem</label>
+            <textarea class="form-control" id="var_msg" rows="3" placeholder="Sua mensagem aqui"></textarea>
+          </div>
 
-                    <button id="alternar3" class="btn btn-danger">Alternar
-                    Spotify</button>
-                    
-                    <button id="alternar4" class="btn btn-danger">Alternar
-                    Camp Nou</button>
-            </div>
-        </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="sim" id="var_novidades">
+            <label class="form-check-label" for="var_novidades">
+              Receber novidades por e-mail
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary my-3">Enviar</button>
+        </form>
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+        <h3>Localização</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.778753974677!2d-47.292750025933906!3d-23.287487551585215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf5ab2d35d2b0d%3A0x90131a5f0c2272b3!2sEscola%20T%C3%A9cnica%20Estadual%20Martinho%20di%20Ciero%20-%20Itu!5e0!3m2!1spt-BR!2sbr!4v1756128894307!5m2!1spt-BR!2sbr"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div><!--fim do container -->
 
   <footer>
     <!-- Footer -->
@@ -155,7 +190,6 @@
   <script src="js/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/exemplos.js"></script>
 </body>
 
 </html>

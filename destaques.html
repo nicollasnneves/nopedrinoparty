@@ -7,6 +7,7 @@
   <title>Introdução Bootstrap</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="shortcut icon" href="img/school.png" type="image/x-icon">
   <link rel="stylesheet" href="css/footer.css">
 </head>
 
@@ -19,10 +20,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="destaques.html">Destaques</a>
         </li>
         <li class="nav-item">
@@ -32,56 +33,91 @@
     </div>
   </nav>
 
-  <div class="row mb-3">
-            <div class="col-md-12 col-sm-12 mb-2">
-                <div class="alert alert-primary" role="alert" id="teste1">
-                    <p>Um texto aqui.</p>
-                </div>
-                <button id="esconder" class="btn btn-danger">Esconder
-                    parágrafo</button>
-                <button id="mostrar" class="btn btn-primary">Mostrar
-                    parágrafo</button>
-            </div>
+  <div class="container mt-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Página Inicial</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Destaques</li>
+      </ol>
+    </nav>
+
+    <!--form para exemplo js-->
+    <div class="form-group">
+      <label for="txtvalor1">Valor 1</label>
+      <input type="number" name="txtvalor1" id="txtvalor1" class="form-control" step="0.5" value>
+    </div>
+    <div class="form-group">
+      <label for="txtvalor2">Valor 2</label>
+      <input type="number" name="txtvalor2" id="txtvalor2" class="form-control" step="0.5" value>
+    </div>
+    <button id="calcular" class="btn btn-primary">Calcular</button>
+
+    <div class="alert alert-success mt-4" role="alert">
+      <p id="txtresultado">Resultado: </p>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-12 col-md-4 mb-3">
+        <div class="card">
+          <img class="card-img-top" src="img/school.png" alt="Imagem de capa do card"
+            style="width: 50%; margin: 0 auto;">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+              do card.</p>
+            <a href="#" class="btn btn-primary">Visitar</a>
+          </div>
         </div>
-
-        <div class="row mb-3">
-            <div class="col-md-12 col-sm-12 mb-2">
-                <div class="alert alert-warning" role="alert" id="teste2">
-                    <p>Um texto aqui.</p>
-                </div>
-                <button id="alterarCSS" class="btn btn-warning">Alterar
-                    CSS</button>
-            </div>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-3">
+        <div class="card" style="background-color: lightgoldenrodyellow;">
+          <img class="card-img-top" src="https://via.placeholder.com/100x180" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+              do card.</p>
+            <a href="#" class="btn btn-primary">Visitar</a>
+          </div>
         </div>
-
-        <div class="row mb-3">
-            <div class="col-md-12 col-sm-12 mb-2">
-                <div class="alert alert-success" role="alert" id="teste3">
-                    <p>Um texto aqui.</p>
-                </div>
-                <button id="alterarClass" class="btn btn-success">Alterar
-                    Class</button>
-            </div>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-3">
+        <div class="card">
+          <img class="card-img-top" src="https://via.placeholder.com/100x180" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+              do card.</p>
+            <a href="#" class="btn btn-primary">Visitar</a>
+          </div>
         </div>
-
-        <div class="row mb-3">
-            <div class="col-md-12 col-sm-12 mb-2">
-                <p>
-                    <a href="https://www.nike.com/" id="link" title="Nike" target="_blank">Nike</a>
-                </p>
-                <button id="alternar1" class="btn btn-danger">Alternar
-                    Nike</button>
-                <button id="alternar2" class="btn btn-primary">Alternar
-                    Barcelona</button>
-
-                    <button id="alternar3" class="btn btn-danger">Alternar
-                    Spotify</button>
-                    
-                    <button id="alternar4" class="btn btn-danger">Alternar
-                    Camp Nou</button>
-            </div>
+      </div>
+    </div><!--fim da primeira linha-->
+    <div class="row">
+      <div class="col-sm-12 col-md-6 mb-3">
+        <div class="card">
+          <img class="card-img-top" src="https://via.placeholder.com/100x180" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+              do card.</p>
+            <a href="#" class="btn btn-primary">Visitar</a>
+          </div>
         </div>
-
+      </div>
+      <div class="col-sm-12 col-md-6 mb-3">
+        <div class="card">
+          <img class="card-img-top" src="https://via.placeholder.com/100x180" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo
+              do card.</p>
+            <a href="#" class="btn btn-primary">Visitar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--fim do container -->
   <footer>
     <!-- Footer -->
     <section id="footer">
@@ -155,7 +191,8 @@
   <script src="js/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/exemplos.js"></script>
+
+  <script src="js/calculo.js"></script>
 </body>
 
 </html>
