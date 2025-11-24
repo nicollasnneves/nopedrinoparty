@@ -61,24 +61,24 @@ $("#alternar2").click(function () {
  
 $("#alternar3").click(function () {
     $("#link").attr({
-        "href": "https://open.spotify.com/intl-pt/",
-        "title": "Spotify"
+        "href": "https://fatecid.com.br/cursos/",
+        "title": "Fatec"
     });
-    $("#link").text("Spotify");
+    $("#link").text("Fatec");
     $("#alternar4").show();
     $("#alternar1").hide();
     $("#alternar2").hide();
     $("#alternar3").hide();
 });
  
-$("#alternar4").click(function () {
+$("#alternar1").click(function () {
     $("#link").attr({
-        "href": "https://www.visitcampnou.com/",
-        "title": "Camp Nou"
+        "href": "https://www.cps.sp.gov.br/",
+        "title": "CPS"
     });
-    $("#link").text("Camp Nou");
-    $("#alternar1").show();
-    $("#alternar2").hide();
+    $("#link").text("CPS");
+    $("#alternar2").show();
+    $("#alternar1").hide();
     $("#alternar3").hide();
     $("#alternar4").hide();
 });
